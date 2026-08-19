@@ -1378,7 +1378,135 @@ header, #site-header, .site-header { border-bottom: none !important; }
 /* Mobile hero video reliability */
 .hero-video{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center center!important;z-index:0!important;background:#111!important;opacity:1!important;visibility:visible!important;}
 .hero,.hero-section,[class*="hero"]{overflow:hidden;}
-</style></head>
+</style>
+<style id="senior-readability-final">
+/* Final accessibility/readability pass for The Sankofa Institute */
+#about-v10{
+  padding: 78px 0 82px !important;
+}
+#about-v10 .about-shell{
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 clamp(24px, 4vw, 64px) !important;
+}
+#about-v10 .about-kicker{
+  font-size: 15px !important;
+  margin-bottom: 18px !important;
+}
+#about-v10 .about-intro{
+  max-width: 980px !important;
+  font-size: 19px !important;
+  line-height: 1.75 !important;
+  margin-bottom: 42px !important;
+}
+#about-v10 .info-bar{
+  width: 100% !important;
+  max-width: none !important;
+  grid-template-columns: 1fr 1fr 1fr 1.45fr 1.65fr !important;
+}
+#about-v10 .info-item,
+#about-v10 .info-item:first-child,
+#about-v10 .info-item:last-child{
+  min-height: 190px !important;
+  padding: 28px 22px 30px !important;
+  justify-content: center !important;
+}
+#about-v10 .info-label{
+  font-size: 14px !important;
+  line-height: 1.35 !important;
+  margin-bottom: 13px !important;
+}
+#about-v10 .info-copy{
+  font-size: 16px !important;
+  line-height: 1.65 !important;
+}
+#about-v10 .info-copy.names{
+  line-height: 1.75 !important;
+}
+#about-v10 .info-copy.definition{
+  max-width: 330px !important;
+}
+
+/* Make the StartWeb7 credit unmistakably clickable */
+.sankofa-closing a{
+  color: #F0C300 !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  font-weight: 700 !important;
+}
+.sankofa-closing a::after{
+  content: " ↗";
+  font-size: .92em;
+}
+.sankofa-closing a:hover,
+.sankofa-closing a:focus-visible{
+  color: #FFF6C7 !important;
+}
+
+@media (max-width: 900px){
+  #about-v10 .about-shell{
+    padding: 0 24px !important;
+  }
+  #about-v10 .about-intro{
+    font-size: 18px !important;
+  }
+  #about-v10 .info-bar{
+    grid-template-columns: 1fr 1fr !important;
+  }
+  #about-v10 .info-item,
+  #about-v10 .info-item:first-child,
+  #about-v10 .info-item:last-child{
+    min-height: 170px !important;
+    padding: 24px 20px !important;
+  }
+  #about-v10 .info-item:last-child{
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 600px){
+  #about-v10{
+    padding: 58px 0 62px !important;
+  }
+  #about-v10 .about-shell{
+    padding: 0 18px !important;
+  }
+  #about-v10 .about-kicker{
+    font-size: 14px !important;
+  }
+  #about-v10 .about-intro{
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 32px !important;
+  }
+  #about-v10 .info-bar{
+    grid-template-columns: 1fr !important;
+  }
+  #about-v10 .info-item,
+  #about-v10 .info-item:first-child,
+  #about-v10 .info-item:last-child{
+    min-height: 145px !important;
+    padding: 22px 12px !important;
+    grid-column: auto !important;
+  }
+  #about-v10 .info-label{
+    font-size: 14px !important;
+  }
+  #about-v10 .info-copy{
+    font-size: 16px !important;
+  }
+  .sankofa-closing{
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    text-align: center !important;
+  }
+}
+</style>
+
+</head>
 <body>
 <!-- ============ TOP CONTACT BAR ============ -->
 <div class="topbar">
@@ -1552,7 +1680,7 @@ header, #site-header, .site-header { border-bottom: none !important; }
 <a href="mailto:vduncanevans@yahoo.com">vduncanevans@yahoo.com</a>
 </div>
 </div>
-<div class="sankofa-closing">The Sankofa Institute · Los Angeles · 501(c)(3) Nonprofit</div>
+<div class="sankofa-closing">All Rights Reserved · The Sankofa Institute · Website built by <a href="https://startweb7.com/" target="_blank" rel="noopener">StartWeb7</a></div>
 <div aria-hidden="true" class="angel-email-modal" id="angelEmailModal">
 <div aria-labelledby="angelEmailTitle" aria-modal="true" class="angel-email-dialog" role="dialog">
 <button aria-label="Close" class="angel-email-close" id="closeAngelEmail" type="button">×</button>
